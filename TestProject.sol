@@ -78,3 +78,10 @@ contract Wallet {
     function getTransferRequests() public view returns (Transfer[] memory){
         return transferRequests;
     }
+    
+    //@dev making a query for balance;
+    function getBalance() public view returns(uint){
+        return address(this).balance;
+    }
+    
+ }
